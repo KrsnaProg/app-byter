@@ -1,0 +1,10 @@
+<div id="carousel" >
+<div id="carousel-container" [style.background-image]="'url(' + imageUrls[currentIndex] + ')'" (click)="nextUrl()">
+</div>
+<div id="buttons">
+    <button (click)="prevUrl()" id="prev">&lt; </button>
+    <button (click)="nextUrl()" id="next">&gt;</button>
+</div>
+</div>
+
+  

@@ -1,0 +1,118 @@
+
+#background{
+    z-index: -1;
+    height: max-content;
+    width: 100vw;
+    background: linear-gradient(177.41deg, rgba(61, 58, 163, 0) -47.7%, #3D3AA3 80.54%),url('../../assets/pngs/dev-team 1.png') no-repeat ;
+    background-size: auto,cover;
+}
+div{
+    height: 30vh;
+}
+*{
+    color: white;
+}
+#texts{
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 63px;
+    padding: 10vh;
+    #welcome{
+        max-width: 100%;
+        text-align: center;
+        width: 612px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 43px;
+        line-height: 55px;
+    }
+    p{
+        max-width: 90%;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        text-align: center;}
+    button{
+        background-color: transparent;
+        padding: 10px 70px 13px 70px;
+        border: 1px solid #FFFFFF;
+        border-radius: 29px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+    button:hover,button:active,button:focus{
+        background-color: white;
+        color: #3D3AA3;
+    }
+    
+}
+#teams{
+    text-align: center;
+    height: max-content;
+    justify-content: center;
+    flex-direction: column;
+    gap: 63px;
+    padding: 10vh;
+    h1{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 47px;
+        line-height: 55px;
+
+    }
+    #images{
+        height: max-content;
+        padding: 100px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        #img1{
+            height: 183px;
+            width: 305px;
+            border-radius: 10px; 
+            background: rgba(255, 255, 255, 1);
+        }
+        #img2{
+            height: 305px;
+            width: 183px;
+            border-radius: 10px;    
+            background: rgba(255, 255, 255, 1);
+
+        }
+        .flex-item{
+            margin-top: 122px;
+        }
+        .flex-item{
+            margin-top: 122px;
+        }
+    }
+}
+@media only screen and (max-width: 570px) {
+    #texts{
+        #welcome{
+            font-size: 30px;
+            font-weight: 300;
+            height: max-content;
+        }
+        button{
+            white-space: nowrap;
+        }
+        p{
+          
+            font-size: larger;
+            max-width: fit-content;
+           
+        }
+    }
+}
+

@@ -1,0 +1,92 @@
+#service{
+    width: fit-content;
+    padding: 10vh 0;
+    margin: 0 5vw;
+    h3{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 62px;
+        color: #E94057;
+        width: 100%;
+        text-align: justify;
+    }
+    #services{
+        width: fit-content;
+        padding: 10vh 0;
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        p{  
+            position: relative;
+            min-height: 230px;
+            max-height: 300px;
+            padding: 50px 50px 10px 50px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 20px;
+            letter-spacing: -0.03em;
+            width: 500px;
+            min-width: 500px;
+            background: #FFFFFF;
+            box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+        }
+        p::before{
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 6%;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 35px;
+            letter-spacing: -0.03em;
+            white-space: nowrap;
+            
+        }
+        @for $i from 1 through 3 {
+            $content: "";
+          
+            @if $i == 1 {
+              $content: "Mobile Application Development";
+            } @else if $i == 2 {
+                $content: "App Design";
+            } @else {
+                $content: "Website Development";
+            }
+          
+            p:nth-child(#{$i})::before {
+              content: $content;
+            }
+          }
+    }
+    
+}
+@media only screen and (max-width:570px){
+    
+    #service{
+        width: min-content;
+        margin: 0 1vw;
+        h3{
+            text-align: center;
+        }
+        #services{
+            width: min-content;
+            p{
+                padding: 40px 20px 15px 20px;
+                min-height: 90px;
+                min-width: 250px;
+                width: 400px;
+            }
+            p::before{
+                font-weight: 400;
+                font-size: 25px;
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,79 @@
+$minvalue: .9;
+#carousel{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  #carousel-container {
+    height: 90vh;
+    width: 90vw;
+    animation: fadeBackground 17s ease-in-out infinite;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    #buttons{
+      position: absolute;
+      bottom: 1vw;
+      display: flex;
+      margin-bottom: 20px;
+      button{
+        height: 50px;
+        width: 50px;
+        font-size: large;
+        font-weight: bolder;
+        background-color: #42419D;
+        color: white;
+        opacity: .5;
+      }
+      
+      #prev{
+        border-radius: 100% 0 0 100%;
+      }
+      #next{
+        border-radius: 0 100% 100% 0;
+      }
+      button:hover{
+        opacity: 1;
+        background: linear-gradient(91.07deg, #5a55d2 4.53%, rgba(63, 37, 234, 0.69) 286.44%);
+    }
+
+}
+@keyframes fadeBackground {
+    0% {
+      opacity: 0;
+      scale: $minvalue;
+    }
+    30%{
+      opacity: 1;
+      scale: 1;
+    }
+    70%{
+      opacity: 1;
+      scale: 1;
+    }
+    100%{
+      opacity: 0;
+      scale: $minvalue;
+    }
+  }
+
+@media only screen and (max-width: 570px) {
+    #carousel-container {
+    margin-left: 5vw;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: left;
+    height: 60vh;
+    width: calc(100vw + 20px);
+    translate: -20px;
+    animation: none;
+    }
+    #buttons{
+      display: none;
+    }
+}
+}
+
+

@@ -1,0 +1,63 @@
+nav{
+    position: absolute;
+    top: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    z-index: 2;
+    #appByter{
+        position: absolute;
+        left: 5%;
+        display: flex;
+    }
+    #buttons{
+        position: absolute;
+        right: 10%;
+        display: flex;
+        gap:63px;
+        button{
+            padding: 5px 10px 5px 10px;
+            background-color: transparent;
+            color: inherit;
+            }
+        button:hover, button:focus,button:active{
+            transform-origin: left;
+            transition: 3ms;
+            border-bottom: solid black 1px;
+        }
+    }
+    
+}
+.team-style{
+    color:white;
+    #buttons{
+        button:hover, button:focus, button:active{
+            transform-origin: left;
+            transition: 3ms;
+            border-bottom: solid white 1px;
+        }
+    }
+    
+}
+@media only screen and (max-width: 570px) {
+    nav{
+        #appByter{
+            display: none;
+        }
+        #buttons{
+            width: 100%;
+            justify-content: center;
+            gap: 20px;
+            right: inherit;
+            button{
+                padding: 0;
+            }
+        }
+    }
+    
+}
