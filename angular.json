@@ -28,7 +28,8 @@
             "assets": [
               "src/assets",
               "src/assets/svgs",
-              "src/assets/svgs/phone1.svg"
+              "src/assets/svgs/.svg",
+              "src/assets/pngs/.png"
             ],
             "styles": [
               "src/styles.scss"

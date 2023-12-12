@@ -54,49 +54,7 @@ div{
     }
     
 }
-#teams{
-    text-align: center;
-    height: max-content;
-    justify-content: center;
-    flex-direction: column;
-    gap: 63px;
-    padding: 10vh;
-    h1{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 47px;
-        line-height: 55px;
 
-    }
-    #images{
-        height: max-content;
-        padding: 100px 0;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 25px;
-        #img1{
-            height: 183px;
-            width: 305px;
-            border-radius: 10px; 
-            background: rgba(255, 255, 255, 1);
-        }
-        #img2{
-            height: 305px;
-            width: 183px;
-            border-radius: 10px;    
-            background: rgba(255, 255, 255, 1);
-
-        }
-        .flex-item{
-            margin-top: 122px;
-        }
-        .flex-item{
-            margin-top: 122px;
-        }
-    }
-}
 @media only screen and (max-width: 570px) {
     #texts{
         #welcome{

@@ -1,25 +1,38 @@
 nav{
     position: absolute;
     top: 0;
+    background: transparent;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 0;
     width: 100%;
-    margin-top: 50px;
+    height: 100px;
     display: flex;
+    align-items: center;
     z-index: 2;
     #appByter{
+        background-image: url("../../assets/pngs/logo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 150px;
         position: absolute;
-        left: 5%;
-        display: flex;
+        left: 0%;
+        height: 100px;
+        width: 100%;
+        border-radius: 0 0 70px 0;
+        transform-origin: right;
+        transition-timing-function: ease-in;
+        transition: 1.1s;
+        opacity: 1;
     }
     #buttons{
         position: absolute;
         right: 10%;
         display: flex;
         gap:63px;
+        z-index: 1;
         button{
             padding: 5px 10px 5px 10px;
             background-color: transparent;
@@ -34,28 +47,39 @@ nav{
     
 }
 .team-style{
-    color:white;
+    color: white;
     #buttons{
         button:hover, button:focus, button:active{
-            transform-origin: left;
-            transition: 3ms;
             border-bottom: solid white 1px;
         }
+    }
+    #appByter{
+        background-color: white;
+        width: 270px;
+        opacity: 1;
+        background-position: 150px;
+
     }
     
 }
 @media only screen and (max-width: 570px) {
     nav{
-        #appByter{
-            display: none;
+        #appByter {
+            width: 30% !important;
+            background-position: center !important;
+            left: 35%;
+            border-radius: 0 0 80px 80px;
         }
         #buttons{
             width: 100%;
             justify-content: center;
-            gap: 20px;
+            gap: 45%;
             right: inherit;
             button{
                 padding: 0;
+            }
+            button:first-child{
+                display: none;
             }
         }
     }

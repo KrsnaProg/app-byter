@@ -1,10 +1,9 @@
 <nav [ngClass]="{ 'team-style': isTeamRoute }">
-    <div id="appByter">
-      <img src="/src/assets/pngs/finallogo.jpeg" alt="APP BYTER" srcset="0">
+    <div routerLink="/main" id="appByter">
     </div>
     <div id="buttons">
     <button  routerLink="/main"  id="services">Services</button>
-    <button routerLink="/main" id="works" (click)="scrollToSelectedDiv('carousel-container')">Portfolio/Projects</button>
+    <button routerLink="/main" id="works" (click)="scrollToSelectedDiv('carousel-container')">Projects</button>
     <button   routerLink="/team"  id="team">About Us</button>
     </div>
 </nav>
