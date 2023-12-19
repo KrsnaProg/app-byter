@@ -1,6 +1,7 @@
 
 #background{
     z-index: -1;
+    min-height: 80dvh;
     height: max-content;
     width: 100vw;
     background: linear-gradient(177.41deg, rgba(61, 58, 163, 0) -47.7%, #3D3AA3 80.54%),url('../../assets/pngs/dev-team 1.png') no-repeat ;
@@ -23,18 +24,19 @@ div{
         max-width: 100%;
         text-align: center;
         width: 612px;
-        font-family: 'Roboto';
+        color: #FFF;
+        font-family: "Roboto";
+        font-size: 47px;
         font-style: normal;
         font-weight: 400;
-        font-size: 43px;
-        line-height: 55px;
+        line-height: normal;
     }
     p{
         max-width: 90%;
-        font-family: 'Roboto';
+        font-family: 'Inter';
         font-style: normal;
-        font-weight: 400;
-        font-size: 40px;
+        line-height: 40px;
+        font-size: 25px;
         text-align: center;}
     button{
         background-color: transparent;
